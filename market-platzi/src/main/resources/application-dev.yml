@@ -1,3 +1,10 @@
 server:
   port: 8001
 
+# Database
+
+spring:
+  datasource:
+    url: jdbc:postgres://localhost:5432/platzi-market
+    username: postgres
+    password: admin

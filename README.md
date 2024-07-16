@@ -112,22 +112,22 @@ En un proyecto Spring Boot, puede configurarse de varias maneras:
 
 En esta capa se encuentra la lógica de negocio y los conceptos centrales de dominio.
 
-- dto: Definen las clases que representan los objetos de transferencia de datos entre capas, se utilizan para transportar la información entre el backed y el Fronted.
-- repository: Contiene interfaces o clases que defincen la interacción con la base de datos, Consultas y operaciones relacionadas con las entidades de dominio.
-- service: Implementa la lógica de negocio. Los servicios interactúan con los repositorios y realizan operaciones especificas.
+- **dto**: Definen las clases que representan los objetos de transferencia de datos entre capas, se utilizan para transportar la información entre el backed y el Fronted.
+- **repository**: Contiene interfaces o clases que defincen la interacción con la base de datos, Consultas y operaciones relacionadas con las entidades de dominio.
+- **service**: Implementa la lógica de negocio. Los servicios interactúan con los repositorios y realizan operaciones especificas.
 
 **Persistence**
 
 Se encarga de la persistencia de datos (Almacenamiento de datos)
 
-- crud: Implementa las operaciones de Crear, Leer, Actualizar, Eliminar para las entidades de dominio.
-- entity: Define las clases que representan las entidades de dominio. Estas clases se mapean directamente a tablas en la base de datos.
+- **crud**: Implementa las operaciones de Crear, Leer, Actualizar, Eliminar para las entidades de dominio.
+- **entity**: Define las clases que representan las entidades de dominio. Estas clases se mapean directamente a tablas en la base de datos.
 
 **Web**
 
 Maneja la interacción con el cliente (API REST)
 
-- controller: Define los controladores que reciben las solicitudes HTTP, procesan la lógica y devuelven las respuestas al cliente.
+- **controller**: Define los controladores que reciben las solicitudes HTTP, procesan la lógica y devuelven las respuestas al cliente.
 
 Esta estructura separa claramente las responsabilidades y facilita el mantenimiento y escalabilidad del proyecto
 
@@ -178,7 +178,7 @@ JPA simplifica la interacción con la base de datos y permite que las aplicacion
 
 Spring Data es un marco de trabajo que forma parte del ecosistema de Spring y tiene como objetivo simplificar el acceso a datos en aplicaciones Java. 
 
-1. Abstracción de la capa de persistencia:
+1. **Abstracción de la capa de persistencia**
 
 - Proporciona una abstracción sobre diferentes tecnologías de almacenamiento de datos:
     - Bases de datos relacionales
@@ -187,16 +187,24 @@ Spring Data es un marco de trabajo que forma parte del ecosistema de Spring y ti
 
 - Permite que el código de lógica de negocio sea independiente de la implementación subyacente de persistencia.
 
-2. Spring Data JPA
+2. **Spring Data JPA**
 
 - Proporciona una forma más sencilla de crear aplicaciones basadas en Spring que utilizan JPA para acceder a datos.
 - Elimina la necesidad de implementar manualmente las clases DAO al extender interfaces como JpaRepository<>.
 
-3. Métodos CRUD automáticos:
+3. **Métodos CRUD automáticos**
 
 - Al extender las interfaces proporcionadas por Spring Data, como JpaRepository, obtienes automáticamente métodos CRUD (Create, Read, Update, Delete) para acceder a los datos.
 
 Spring Data simplifica la capa de persistencia en aplicaciones Spring, permitiendo a los desarrolladores acceder a datos de manera más eficiente y consistente.
 
 ---
+
+### Base de datos
+
+![alt text](image-2.png)
+
+[Schema](https://drive.google.com/file/d/1DZTGB-BC3LqoZLN_UK8uyt4_eZP-MfBl/view)
+
+[Datos](https://drive.google.com/file/d/1MhNMwcxSvRYNfA8H3NjOtixSPM6Ovwaa/view)
 
