@@ -59,6 +59,16 @@ Esta herramienta permite comenzar rápidamente con proyectos Spring Boot, permit
 
 --- 
 
+Una vez descargado el proyecto desde Spring Initializr y cargadas las dependencias, podemos comenzar a editar nuestro proyecto. Para optimizar el entorno de trabajo, es útil ocultar las carpetas que no vamos a utilizar. Para hacerlo, podemos seguir estos pasos:
 
+1. En la raíz del proyecto, hacer clic derecho y seleccionar "Open Module Settings" o presionar la tecla F4.
+2. En la ventana de configuración del módulo, dirigirse a la pestaña "Modules".
+3. Marcar las carpetas que no vamos a utilizar como "Excluded" y aplicar los cambios.
+4. En la barra de herramientas del proyecto, hacer clic en los tres puntos y seleccionar "Apariencia".
+5. Asegurarse de desmarcar la opción "Mostrar archivos excluidos".
+
+Estos pasos nos permitirán acceder más fácilmente a las carpetas relevantes para nuestro proyecto y mantener el entorno de desarrollo limpio y organizado.
+
+![alt text](image-1.png)
 
 
