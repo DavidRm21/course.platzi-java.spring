@@ -71,4 +71,35 @@ Estos pasos nos permitirán acceder más fácilmente a las carpetas relevantes p
 
 ![alt text](image-1.png)
 
+---
 
+### Anotación @SpringBootAplication
+
+Combina las anotaciones:
+
+- @EnableAutoConfiguration
+- @Configuration
+- @ComponentScan
+
+Indica una clase de configuración con uno o más @Bean, tambien activa la autoconfiguración y el escaneo de componentes
+
+--- 
+
+### Propiedades de la aplicación
+
+En un proyecto Spring Boot, puede configurarse de varias maneras:
+
+1. **Archivos de propiedades**: 
+
+- Spring Boot maneja un archivo de propiedades para las configuraciones generales de la aplicación.
+- Puede usar dos formatos **.yml** y **.properties**
+
+2. **Propiedades personalizadas**:
+
+- Puede definirse propiedades propias en los archivos de configuración.
+- Pueden ser accedidas mediante inyección de la clase Environment
+
+3. **Gestión de perfiles**:
+
+- Spring Boot permite definir perfiles según el tipo de despliegue (desarrollo, producción, etc.).
+    - application-***{perfil}***.properties o application-***{perfil}***.yml
